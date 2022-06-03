@@ -67,17 +67,36 @@
                                         <rect key="frame" x="0.0" y="216" width="374" height="553"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HAl-8Z-3te">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DivisionCell" textLabel="093-0p-Izg" style="IBUITableViewCellStyleDefault" id="HAl-8Z-3te">
                                                 <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HAl-8Z-3te" id="xJ7-YD-MUv">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HAl-8Z-3te" id="xJ7-YD-MUv">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="093-0p-Izg">
+                                                            <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="x7N-tj-2OQ"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vRE-kt-ND1"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="DqH-te-BzA" firstAttribute="trailing" secondItem="XHd-AM-3Tt" secondAttribute="trailingMargin" id="7WB-x9-K5b"/>
+                                    <constraint firstItem="DqH-te-BzA" firstAttribute="top" secondItem="phJ-ZS-IY3" secondAttribute="bottom" id="9kq-t0-3ut"/>
+                                    <constraint firstItem="DqH-te-BzA" firstAttribute="bottom" secondItem="XHd-AM-3Tt" secondAttribute="bottomMargin" id="XBR-0J-Nij"/>
+                                    <constraint firstItem="DqH-te-BzA" firstAttribute="leading" secondItem="XHd-AM-3Tt" secondAttribute="leadingMargin" id="glN-L1-6wo"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
