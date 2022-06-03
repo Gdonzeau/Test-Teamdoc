@@ -12,7 +12,7 @@ struct GeneralBase: Codable {
     let appVersion: [OS]
     let prefixes: [Prefix]
     let norm_Iso3166_2: [[String:Country]]
-    let proStatus: [ProStatus]
+    var proStatus: [ProStatus]
     let speciality: [Speciality]
     // On adapte les noms pour qu'ils soient utilisable par Swift
     enum CodingKeys: String, CodingKey {
@@ -48,7 +48,7 @@ struct Country: Codable {
 
 struct ProStatus: Codable {
     let label: String
-    let status: [Status]
+    var status: [Status]
 }
 
 struct Status: Codable {

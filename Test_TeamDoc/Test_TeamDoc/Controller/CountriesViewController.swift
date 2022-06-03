@@ -12,8 +12,7 @@ class CountriesViewController: UIViewController {
     private let dataCountries = DataLoaded.allData.norm_Iso3166_2
     private var countries = [Country]()
     private var divisions = [String]()
-    private var firstStart = true
-
+    
     @IBOutlet weak var countriesPickerView: UIPickerView!
     
     @IBOutlet weak var divisionsTableView: UITableView!
@@ -28,13 +27,12 @@ class CountriesViewController: UIViewController {
     }
     
     func preparingDatas() {
-        // On charge un pays "vide" pour la présenation
+        // On charge un pays "vide" pour la présentation
         let firstCountryEmpty = Country(name: "- -", divisions: [:])
         countries.append(firstCountryEmpty)
         
         for dico in dataCountries {
-            for (countryIndex, country) in dico {
-                print("Le pays \(country.name) a pour index \(countryIndex)")
+            for (_, country) in dico {
                 countries.append(country)
             }
         }
@@ -63,7 +61,6 @@ extension CountriesViewController: UIPickerViewDelegate, UIPickerViewDataSource 
         }
         divisionsTableView.reloadData()
     }
-    
 }
 
 // MARK: - Gestion de la TableView
@@ -80,6 +77,4 @@ extension CountriesViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
