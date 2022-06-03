@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		043764CC28490D06007C6FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CB28490D06007C6FFD /* AppDelegate.swift */; };
 		043764CE28490D06007C6FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CD28490D06007C6FFD /* SceneDelegate.swift */; };
-		043764D028490D06007C6FFD /* ViewControllerLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CF28490D06007C6FFD /* ViewControllerLoadData.swift */; };
+		043764D028490D06007C6FFD /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CF28490D06007C6FFD /* LoadDataViewController.swift */; };
 		043764D328490D06007C6FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043764D128490D06007C6FFD /* Main.storyboard */; };
 		043764D828490D12007C6FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043764D728490D12007C6FFD /* Assets.xcassets */; };
 		043764DB28490D12007C6FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043764D928490D12007C6FFD /* LaunchScreen.storyboard */; };
@@ -19,6 +19,11 @@
 		0437654C28496812007C6FFD /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437654B28496812007C6FFD /* DataStruct.swift */; };
 		043765502849686B007C6FFD /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437654F2849686B007C6FFD /* APIErrors.swift */; };
 		0437655428496947007C6FFD /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437655328496947007C6FFD /* APIConfig.swift */; };
+		04E65328284A345000809235 /* DataLoaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E65327284A345000809235 /* DataLoaded.swift */; };
+		04E6532C284A357C00809235 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6532B284A357C00809235 /* Bundle-Decodable.swift */; };
+		04E65330284A470600809235 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6532F284A470600809235 /* CountriesViewController.swift */; };
+		04E65336284A53DF00809235 /* StatutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E65335284A53DF00809235 /* StatutsViewController.swift */; };
+		04E6533A284A545E00809235 /* SpecialitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E65339284A545E00809235 /* SpecialitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,7 @@
 		043764C828490D06007C6FFD /* Test_TeamDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_TeamDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043764CB28490D06007C6FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043764CD28490D06007C6FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043764CF28490D06007C6FFD /* ViewControllerLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLoadData.swift; sourceTree = "<group>"; };
+		043764CF28490D06007C6FFD /* LoadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataViewController.swift; sourceTree = "<group>"; };
 		043764D228490D06007C6FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043764D728490D12007C6FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043764DA28490D12007C6FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		0437654B28496812007C6FFD /* DataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
 		0437654F2849686B007C6FFD /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		0437655328496947007C6FFD /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		04E65327284A345000809235 /* DataLoaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaded.swift; sourceTree = "<group>"; };
+		04E6532B284A357C00809235 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		04E6532F284A470600809235 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		04E65335284A53DF00809235 /* StatutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatutsViewController.swift; sourceTree = "<group>"; };
+		04E65339284A545E00809235 /* SpecialitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				0437654B28496812007C6FFD /* DataStruct.swift */,
+				04E65327284A345000809235 /* DataLoaded.swift */,
+				04E6532B284A357C00809235 /* Bundle-Decodable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,7 +142,10 @@
 		0437650628490EC8007C6FFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				043764CF28490D06007C6FFD /* ViewControllerLoadData.swift */,
+				043764CF28490D06007C6FFD /* LoadDataViewController.swift */,
+				04E6532F284A470600809235 /* CountriesViewController.swift */,
+				04E65335284A53DF00809235 /* StatutsViewController.swift */,
+				04E65339284A545E00809235 /* SpecialitiesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,11 +287,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0437654C28496812007C6FFD /* DataStruct.swift in Sources */,
-				043764D028490D06007C6FFD /* ViewControllerLoadData.swift in Sources */,
+				043764D028490D06007C6FFD /* LoadDataViewController.swift in Sources */,
 				043764CC28490D06007C6FFD /* AppDelegate.swift in Sources */,
+				04E65336284A53DF00809235 /* StatutsViewController.swift in Sources */,
+				04E65330284A470600809235 /* CountriesViewController.swift in Sources */,
 				0437654828496672007C6FFD /* APISearch.swift in Sources */,
 				043764CE28490D06007C6FFD /* SceneDelegate.swift in Sources */,
+				04E6532C284A357C00809235 /* Bundle-Decodable.swift in Sources */,
 				043765502849686B007C6FFD /* APIErrors.swift in Sources */,
+				04E65328284A345000809235 /* DataLoaded.swift in Sources */,
+				04E6533A284A545E00809235 /* SpecialitiesViewController.swift in Sources */,
 				0437655428496947007C6FFD /* APIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

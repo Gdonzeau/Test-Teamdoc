@@ -7,13 +7,6 @@
 
 import Foundation
 
-struct RatesOnLine: Codable {
-    let success: Bool
-    let timestamp: Int
-    let base, date: String
-    let rates: [String: Double]
-}
-
 struct GeneralBase: Codable {
     let resource_version: Int
     let appVersion: [OS]
@@ -93,4 +86,14 @@ struct SousSubSpeciality: Codable {
 
 struct UnderSpeciality: Codable { // Rien car toutes les données sont nil
     
+}
+
+
+extension GeneralBase: Equatable {
+    static func == (lhs: GeneralBase, rhs: GeneralBase) -> Bool {
+        return // S'il y a autant de pays, de status et de spécialités dans les éléments comparés, on peut estimer qu'il n'y a pas eu de mise à jour.
+            lhs.norm_Iso3166_2.count == rhs.norm_Iso3166_2.count &&
+            lhs.proStatus.count == rhs.proStatus.count &&
+            lhs.speciality.count == rhs.speciality.count
+    }
 }

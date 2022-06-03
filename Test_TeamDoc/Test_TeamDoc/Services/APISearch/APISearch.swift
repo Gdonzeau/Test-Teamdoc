@@ -28,7 +28,6 @@ class DataService {
         var request = URLRequest(url:url)
         request.httpMethod = APIConfig.httpMethod
         
-        
         task?.cancel()
         task = session.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
@@ -40,12 +39,14 @@ class DataService {
                     completion(.failure(.noData))
                     return
                 }
+                
                 guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                     completion(.failure(.invalidStatusCode))
                     return
                 }
                 do {
                     let data = try JSONDecoder().decode(GeneralBase.self, from: dataUnwrapped)
+                    print()
                     completion(.success(data))
                     
                 } catch {
