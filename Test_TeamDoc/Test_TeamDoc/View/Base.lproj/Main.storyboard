@@ -32,7 +32,7 @@
         <scene sceneID="KI0-bI-zvi">
             <objects>
                 <viewController id="zEb-5q-wYC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4oc-OY-HRr">
+                    <view key="view" contentMode="scaleToFill" id="4oc-OY-HRr" customClass="ViewControllerLoadData">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xWn-da-haE"/>
