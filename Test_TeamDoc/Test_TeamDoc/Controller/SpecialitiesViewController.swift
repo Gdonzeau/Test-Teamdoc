@@ -8,22 +8,52 @@
 import UIKit
 
 class SpecialitiesViewController: UIViewController {
+    
+    private var dataUsed = [Speciality]()
 
+    @IBOutlet weak var specialitiesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        loadingData()
+        specialitiesTableView.reloadData()
     }
-    */
+    
+    func setupView() {
+        view.backgroundColor = AppColors.backgroundColor
+        specialitiesTableView.layer.cornerRadius = 5
+    }
+    
+    func loadingData() {
+        dataUsed = DataLoaded.allData.speciality
+    }
+}
 
+extension SpecialitiesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        dataUsed.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SpecialityCell", for: indexPath) as? SpecialityTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let label = dataUsed[indexPath.row].label
+        cell.label.text = label
+        
+        let key = dataUsed[indexPath.row].key
+        cell.key.text = key
+        
+        let externalKey = dataUsed[indexPath.row].external_keys[0]
+        cell.externalKey.text = externalKey
+        
+        return cell
+    }
+    
+    
 }
