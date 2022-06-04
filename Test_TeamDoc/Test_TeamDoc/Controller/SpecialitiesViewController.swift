@@ -33,7 +33,8 @@ class SpecialitiesViewController: UIViewController {
     }
 }
 
-extension SpecialitiesViewController: UITableViewDataSource {
+extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dataUsed.count
     }
@@ -52,7 +53,19 @@ extension SpecialitiesViewController: UITableViewDataSource {
         let externalKey = dataUsed[indexPath.row].external_keys[0]
         cell.externalKey.text = externalKey
         
+        if let numberOfSubCategories = dataUsed[indexPath.row].sub?.count {
+            cell.howManySubcategories = numberOfSubCategories
+        } else {
+            cell.howManySubcategories = 0
+        }
+        
+        cell.sub.text = "Ss-cat ->"
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        90
     }
     
     
