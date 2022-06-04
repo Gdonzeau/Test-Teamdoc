@@ -19,6 +19,7 @@
 		0437654C28496812007C6FFD /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437654B28496812007C6FFD /* DataStruct.swift */; };
 		043765502849686B007C6FFD /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437654F2849686B007C6FFD /* APIErrors.swift */; };
 		0437655428496947007C6FFD /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437655328496947007C6FFD /* APIConfig.swift */; };
+		043E9562284B54730011B490 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E9561284B54730011B490 /* Colors.swift */; };
 		04E65328284A345000809235 /* DataLoaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E65327284A345000809235 /* DataLoaded.swift */; };
 		04E6532C284A357C00809235 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6532B284A357C00809235 /* Bundle-Decodable.swift */; };
 		04E65330284A470600809235 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6532F284A470600809235 /* CountriesViewController.swift */; };
@@ -53,6 +54,7 @@
 		0437654B28496812007C6FFD /* DataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
 		0437654F2849686B007C6FFD /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		0437655328496947007C6FFD /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		043E9561284B54730011B490 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		04E65327284A345000809235 /* DataLoaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaded.swift; sourceTree = "<group>"; };
 		04E6532B284A357C00809235 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		04E6532F284A470600809235 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				0437654B28496812007C6FFD /* DataStruct.swift */,
 				04E65327284A345000809235 /* DataLoaded.swift */,
 				04E6532B284A357C00809235 /* Bundle-Decodable.swift */,
+				043E9561284B54730011B490 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				0437654828496672007C6FFD /* APISearch.swift in Sources */,
 				043764CE28490D06007C6FFD /* SceneDelegate.swift in Sources */,
 				04E6532C284A357C00809235 /* Bundle-Decodable.swift in Sources */,
+				043E9562284B54730011B490 /* Colors.swift in Sources */,
 				043765502849686B007C6FFD /* APIErrors.swift in Sources */,
 				04E65328284A345000809235 /* DataLoaded.swift in Sources */,
 				04E6533A284A545E00809235 /* SpecialitiesViewController.swift in Sources */,

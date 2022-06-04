@@ -9,7 +9,11 @@ import UIKit
 
 class CountriesViewController: UIViewController {
     
-    private let dataCountries = DataLoaded.allData.norm_Iso3166_2
+    /* Petit changement = On charge les données à l'apparition de la vue pour permettre de les actualiser le cas échéant
+     * Les données modifiées ont volontairement été laissées en commentaire
+     */
+    private var dataUsed = [[String : Country]]()
+    //private let dataCountries = DataLoaded.allData.norm_Iso3166_2
     private var countries = [Country]()
     private var divisions = [String]()
     
@@ -19,11 +23,21 @@ class CountriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        preparingDatas()
+        setupView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        loadingData()
+        preparingDatas()
         divisionsTableView.reloadData()
+    }
+    
+    func setupView() {
+        view.backgroundColor = AppColors.backgroundColor
+    }
+    
+    func loadingData() {
+        dataUsed = DataLoaded.allData.norm_Iso3166_2
     }
     
     func preparingDatas() {
@@ -31,7 +45,8 @@ class CountriesViewController: UIViewController {
         let firstCountryEmpty = Country(name: "- -", divisions: [:])
         countries.append(firstCountryEmpty)
         
-        for dico in dataCountries {
+        //for dico in dataCountries {
+        for dico in dataUsed {
             for (_, country) in dico {
                 countries.append(country)
             }
@@ -47,7 +62,8 @@ extension CountriesViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        dataCountries.count
+        //dataCountries.count
+        dataUsed.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
