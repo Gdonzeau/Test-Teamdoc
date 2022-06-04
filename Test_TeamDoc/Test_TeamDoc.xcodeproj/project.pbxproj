@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410EDF4284BE12600F62EB8 /* SubSpecialityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410EDF3284BE12600F62EB8 /* SubSpecialityViewController.swift */; };
 		043764CC28490D06007C6FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CB28490D06007C6FFD /* AppDelegate.swift */; };
 		043764CE28490D06007C6FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CD28490D06007C6FFD /* SceneDelegate.swift */; };
 		043764D028490D06007C6FFD /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043764CF28490D06007C6FFD /* LoadDataViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410EDF3284BE12600F62EB8 /* SubSpecialityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSpecialityViewController.swift; sourceTree = "<group>"; };
 		043764C828490D06007C6FFD /* Test_TeamDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_TeamDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043764CB28490D06007C6FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043764CD28490D06007C6FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				04E65335284A53DF00809235 /* StatutsViewController.swift */,
 				04E65339284A545E00809235 /* SpecialitiesViewController.swift */,
 				043E9565284B691D0011B490 /* SpecialityTableViewCell.swift */,
+				0410EDF3284BE12600F62EB8 /* SubSpecialityViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				04E65328284A345000809235 /* DataLoaded.swift in Sources */,
 				04E6533A284A545E00809235 /* SpecialitiesViewController.swift in Sources */,
 				0437655428496947007C6FFD /* APIConfig.swift in Sources */,
+				0410EDF4284BE12600F62EB8 /* SubSpecialityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

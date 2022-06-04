@@ -10,7 +10,7 @@ import UIKit
 class SpecialitiesViewController: UIViewController {
     
     private var dataUsed = [Speciality]()
-
+    
     @IBOutlet weak var specialitiesTableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,6 +21,15 @@ class SpecialitiesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         loadingData()
         specialitiesTableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let subSpecialityArray = sender as? [SubSpeciality] else {
+            return
+        }
+        if segue.identifier == "segueToSubSpecialities", let subSpecialityVC = segue.destination as? SubSpecialityViewController {
+            subSpecialityVC.subSpecialities = subSpecialityArray
+        }
     }
     
     func setupView() {
@@ -68,5 +77,15 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
         90
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Départ")
+        
+        guard let unwrappedSubSpeciality = dataUsed[indexPath.row].sub else {
+            print("Pas de données")
+            return
+        }
+        performSegue(withIdentifier: "segueToSubSpecialities", sender: unwrappedSubSpeciality)
+        specialitiesTableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
