@@ -39,7 +39,7 @@ class SpecialityTableViewCell: UITableViewCell {
         self.label.text = label
         self.key.text = key
         self.externalKey.text = externalKey
-        self.sub.text = "Ss-cat ->"
+        self.sub.text = ">"
         self.howManySubcategories = howManySubcategories
     }
 

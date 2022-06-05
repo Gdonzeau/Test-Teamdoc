@@ -18,6 +18,7 @@ class SubSpecialityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = AppColors.backgroundColor
+        title = "Sous-spécialités"
     }
 }
 
@@ -27,9 +28,11 @@ extension SubSpecialityViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "subSpecialityCell", for: indexPath)
         let speciality = subSpecialities[indexPath.row]
         cell.textLabel?.text = speciality.label
+        cell.detailTextLabel?.text = speciality.key
         
         return cell
     }

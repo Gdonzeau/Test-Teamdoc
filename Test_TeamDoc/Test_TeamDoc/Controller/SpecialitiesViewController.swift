@@ -33,6 +33,7 @@ class SpecialitiesViewController: UIViewController {
     }
     
     func setupView() {
+        title = "Spécialités"
         view.backgroundColor = AppColors.backgroundColor
         specialitiesTableView.layer.cornerRadius = 5
     }
@@ -68,7 +69,7 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
             cell.howManySubcategories = 0
         }
         
-        cell.sub.text = "Ss-cat ->"
+        cell.sub.text = ">"
         
         return cell
     }
