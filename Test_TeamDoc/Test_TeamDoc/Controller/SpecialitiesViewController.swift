@@ -63,20 +63,11 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
         let externalKey = dataUsed[indexPath.row].external_keys[0]
         cell.externalKey.text = externalKey
         
-        
-        if let numberOfSubCategories = dataUsed[indexPath.row].sub?.count {
-            cell.howManySubcategories = numberOfSubCategories
-        } else {
-            cell.howManySubcategories = 0
-        }
-        if cell.howManySubcategories > 0 {
-            cell.backgroundColor = .systemPink
-        }
-        if let unwrappedSubSpeciality = dataUsed[indexPath.row].sub {
+        if dataUsed[indexPath.row].sub != nil { // S'il y a des sous spécialités, la case est entourée de bleu.
             cell.backgroundColor = .blue
+        } else {
+            cell.backgroundColor = .white
         }
-        
-        cell.sub.text = ">"
         
         return cell
     }

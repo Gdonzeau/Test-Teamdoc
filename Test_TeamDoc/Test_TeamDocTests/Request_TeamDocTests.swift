@@ -8,7 +8,7 @@
 import XCTest
 @testable import Test_TeamDoc
 
-class Test_TeamDocTests: XCTestCase {
+class Request_TeamDocTests: XCTestCase {
 
     func testGetConversionShouldPostFailedCallbackIfIncorrectUrl() {
         let errorExpected:APIErrors = .invalidURL
