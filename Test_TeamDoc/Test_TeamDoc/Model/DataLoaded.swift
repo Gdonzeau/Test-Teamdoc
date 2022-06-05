@@ -8,5 +8,6 @@
 import Foundation
 
 struct DataLoaded {
-    static var allData: GeneralBase = Bundle.main.decode("FirstFile.json")
+    //static var allData: GeneralBase = Bundle.main.decode("FirstFile.json")
+    static var allData: GeneralBase = Bundle.main.decode("ShortDataFile.json")
 }

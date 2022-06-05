@@ -1,0 +1,587 @@
+{
+    "resource_version": 18,
+    "application-version": [
+        {
+            "os": "android",
+            "internal": 215
+        },
+        {
+            "os": "ios",
+            "internal": 405
+        }
+    ],
+    "pn-prefix": [
+        {
+            "iso2": "AF",
+            "iso3": "AFG",
+            "prefix": "+93"
+        },
+        {
+            "iso2": "ZA",
+            "iso3": "ZAF",
+            "prefix": "+27"
+        },
+        {
+            "iso2": "AL",
+            "iso3": "ALB",
+            "prefix": "+355"
+        },
+        {
+            "iso2": "DZ",
+            "iso3": "DZA",
+            "prefix": "+213"
+        },
+        {
+            "iso2": "DE ",
+            "iso3": "DEU",
+            "prefix": "+49"
+        },
+        {
+            "iso2": "AD",
+            "iso3": "AND",
+            "prefix": "+376"
+        }
+    ],
+    "pro-status": [
+        {
+            "label": "MEDICAL",
+            "status": [
+                {
+                    "key": "MED",
+                    "external_key": 10,
+                    "label": "Médecin",
+                    "abrev": "Médecin",
+                    "status": 56,
+                    "validate": true,
+                    "network": true,
+                    "role": "MEDICAL"
+                },
+                {
+                    "key": "MEDLIB",
+                    "external_key": 10,
+                    "label": "Médecin Libéral",
+                    "abrev": "Médecin Lib.",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "MEDICAL"
+                },
+                {
+                    "key": "PUPH",
+                    "external_key": 10,
+                    "label": "Pr. des Universités - Praticien Hospitalier",
+                    "abrev": "PU-PH",
+                    "status": 56,
+                    "validate": true,
+                    "network": true,
+                    "role": "HEAD"
+                },
+                {
+                    "key": "MCUPH",
+                    "external_key": 10,
+                    "label": "Maître de Conférences des Universités - Praticien Hospitalier",
+                    "abrev": "MCU-PH",
+                    "status": 56,
+                    "validate": true,
+                    "network": true,
+                    "role": "HEAD"
+                },
+            ]
+        },
+        {
+            "label": "INFIRMIER",
+            "status": [
+                {
+                    "key": "IDE",
+                    "external_key": 60,
+                    "label": "Infirmier Diplômé d'Etat",
+                    "abrev": "IDE",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "NURSE"
+                },
+                {
+                    "key": "IADE",
+                    "external_key": 60,
+                    "label": "Infirmier Anesthésiste Diplômé d'Etat",
+                    "abrev": "IADE",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "NURSE"
+                },
+                {
+                    "key": "IBODE",
+                    "external_key": 60,
+                    "label": "Infirmier de Bloc Opératoire Diplômé d'Etat",
+                    "abrev": "IBODE",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "NURSE"
+                },
+                {
+                    "key": "IPDE",
+                    "external_key": 60,
+                    "label": "Infirmier Puéricultrice Diplômé d'Etat",
+                    "abrev": "IPDE",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "NURSE"
+                }
+            ]
+        },
+        {
+            "label": "PARAMEDICAL",
+            "status": [
+                {
+                    "key": "ASSI",
+                    "external_key": null,
+                    "label": "Aide Soignant",
+                    "abrev": "AS",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PARAMEDICAL"
+                },
+                {
+                    "key": "ASSS",
+                    "external_key": 41,
+                    "label": "Assistant de service social",
+                    "abrev": "Assist. soc.",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PARAMEDICAL"
+                },
+                {
+                    "key": "AMB",
+                    "external_key": null,
+                    "label": "Ambulancier",
+                    "abrev": "Ambulancier",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PARAMEDICAL"
+                },
+                {
+                    "key": "AUDIOP",
+                    "external_key": 26,
+                    "label": "Audioprothésiste",
+                    "abrev": "Audioprothésiste",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PARAMEDICAL"
+                }
+            ]
+        },
+        {
+            "label": "PHARMACIE",
+            "status": [
+                {
+                    "key": "PHAR",
+                    "external_key": 21,
+                    "label": "Pharmacien",
+                    "abrev": "Pharmacien",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PHARMA"
+                },
+                {
+                    "key": "PHYMED",
+                    "external_key": null,
+                    "label": "Physicien médical",
+                    "abrev": "Physicien médical",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PHARMA"
+                },
+                {
+                    "key": "PREPAP",
+                    "external_key": null,
+                    "label": "Préparateur en pharmacie",
+                    "abrev": "Prépa",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "PHARMA"
+                }
+            ]
+        },
+        {
+            "label": "ADMINISTRATIF",
+            "status": [
+                {
+                    "key": "DIR",
+                    "external_key": null,
+                    "label": "Directeur d'établissement",
+                    "abrev": "Directeur",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "ADMINISTRATIVE"
+                },
+                {
+                    "key": "DSI",
+                    "external_key": null,
+                    "label": "Directeur des systèmes d'information",
+                    "abrev": "DSI",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "ADMINISTRATIVE"
+                },
+                {
+                    "key": "RSSI",
+                    "external_key": null,
+                    "label": "Responsable de la sécurité des systèmes d'information",
+                    "abrev": "RSSI",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "ADMINISTRATIVE"
+                }
+            ]
+        },
+        {
+            "label": "DENTAIRE",
+            "status": [
+                {
+                    "key": "CHIRD",
+                    "external_key": 40,
+                    "label": "Chirurgien-Dentiste",
+                    "abrev": "Dentiste",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "MEDICAL"
+                },
+                {
+                    "key": "ASSD",
+                    "external_key": 31,
+                    "label": "Assistant dentaire",
+                    "abrev": "Assistant dentaire",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "NURSE"
+                }
+            ]
+        },
+        {
+            "label": "AUTRES",
+            "status": [
+                {
+                    "key": "TDINV",
+                    "external_key": null,
+                    "label": "Actionnaires Team'Doc",
+                    "abrev": "Act. Team'Doc",
+                    "status": 0,
+                    "validate": true,
+                    "network": true,
+                    "role": "HEAD"
+                },
+                {
+                    "key": "DEV",
+                    "external_key": null,
+                    "label": "Développeur",
+                    "abrev": "Dév.",
+                    "status": 56,
+                    "validate": true,
+                    "network": true,
+                    "role": "HEAD"
+                },
+                {
+                    "key": "OTHERS",
+                    "external_key": null,
+                    "label": "Autres",
+                    "abrev": "Autres",
+                    "status": 0,
+                    "validate": false,
+                    "network": false,
+                    "role": null
+                }
+            ]
+        }
+    ],
+    "speciality": [
+        {
+            "key": "SP-ALLERGO",
+            "external_keys": [
+                "SM57"
+            ],
+            "label": "Allergologie",
+            "abrev": "Allergo",
+            "sub": null
+        },
+        {
+            "key": "SP-ANACYT",
+            "external_keys": [
+                "SM01"
+            ],
+            "label": "Anatomie et Cytologie",
+            "abrev": "Ana-Cyt",
+            "sub": null
+        },
+        {
+            "key": "SP-ANESREA",
+            "external_keys": [
+                "SM02"
+            ],
+            "label": "Anesthésie-Réanimation",
+            "abrev": "Anes-Réa",
+            "sub": [
+                {
+                    "key": "SP-ANES",
+                    "label": "Anesthésie",
+                    "abrev": "Anes",
+                    "sub": null
+                },
+                {
+                    "key": "SP-REA",
+                    "label": "Réanimation",
+                    "abrev": "Réa",
+                    "sub": [
+                        {
+                            "key": "SP-REAMED",
+                            "label": "Réanimation Médicale",
+                            "abrev": "Réa-Médic",
+                            "sub": null
+                        },
+                        {
+                            "key": "SP-REACHIR",
+                            "label": "Réanimation Chirurgicale",
+                            "abrev": "Réa-Chir",
+                            "sub": null
+                        },
+                        {
+                            "key": "SP-REACHIRPOL",
+                            "label": "Réa. Chir. Poly.",
+                            "abrev": "Réa-Chirpolyv",
+                            "sub": null
+                        },
+                    ]
+                }
+            ]
+        }
+    ],
+    
+    "iso-3166-2": [
+        {
+            "AF": {
+                "name": "Afghanistan",
+                "divisions": {
+                    "AF-BDS": "Badakhshān",
+                    "AF-BDG": "Bādghīs",
+                    "AF-BGL": "Baghlān",
+                    "AF-BAL": "Balkh",
+                    "AF-BAM": "Bāmīān",
+                    "AF-FRA": "Farāh",
+                    "AF-FYB": "Fāryāb",
+                    "AF-GHA": "Ghaznī",
+                    "AF-GHO": "Ghowr",
+                    "AF-HEL": "Helmand",
+                    "AF-HER": "Herāt",
+                    "AF-JOW": "Jowzjān",
+                    "AF-KAB": "Kabul (Kābol)",
+                    "AF-KAN": "Kandahār",
+                    "AF-KAP": "Kāpīsā",
+                    "AF-KNR": "Konar (Kunar)",
+                    "AF-KDZ": "Kondoz (Kunduz)",
+                    "AF-LAG": "Laghmān",
+                    "AF-LOW": "Lowgar",
+                    "AF-NAN": "Nangrahār (Nangarhār)",
+                    "AF-NIM": "Nīmrūz",
+                    "AF-ORU": "Orūzgān (Urūzgā",
+                    "AF-PIA": "Paktīā",
+                    "AF-PKA": "Paktīkā",
+                    "AF-PAR": "Parwān",
+                    "AF-SAM": "Samangān",
+                    "AF-SAR": "Sar-e Pol",
+                    "AF-TAK": "Takhār",
+                    "AF-WAR": "Wardak (Wardag)",
+                    "AF-ZAB": "Zābol (Zābul)"
+                }
+            }
+        },
+        {
+            "AL": {
+                "name": "Albania",
+                "divisions": {
+                    "AL-BR": "Berat",
+                    "AL-BU": "Bulqizë",
+                    "AL-DL": "Delvinë",
+                    "AL-DV": "Devoll",
+                    "AL-DI": "Dibër",
+                    "AL-DR": "Durrës",
+                    "AL-EL": "Elbasan",
+                    "AL-FR": "Fier",
+                    "AL-GR": "Gramsh",
+                    "AL-GJ": "Gjirokastër",
+                    "AL-HA": "Has",
+                    "AL-KA": "Kavajë",
+                    "AL-ER": "Kolonjë",
+                    "AL-KO": "Korcë",
+                    "AL-KR": "Krujë",
+                    "AL-KC": "Kucovë",
+                    "AL-KU": "Kukës",
+                    "AL-LA": "Laç",
+                    "AL-LE": "Lezhë",
+                    "AL-LB": "Librazhd",
+                    "AL-LU": "Lushnjë",
+                    "AL-MM": "Malësia e Madhe",
+                    "AL-MK": "Mallakastër",
+                    "AL-MT": "Mat",
+                    "AL-MR": "Mirditë",
+                    "AL-PQ": "Peqin",
+                    "AL-PR": "Përmet",
+                    "AL-PG": "Pogradec",
+                    "AL-PU": "Pukë",
+                    "AL-SR": "Sarandë",
+                    "AL-SK": "Skrapar",
+                    "AL-SH": "Shkodër",
+                    "AL-TE": "Tepelenë",
+                    "AL-TR": "Tiranë",
+                    "AL-TP": "Tropojë",
+                    "AL-VL": "Vlorë"
+                }
+            }
+        },
+        {
+            "DZ": {
+                "name": "Algeria",
+                "divisions": {
+                    "DZ-01": "Adrar",
+                    "DZ-44": "Aïn Defla",
+                    "DZ-46": "Aïn Témouchent",
+                    "DZ-16": "Alger",
+                    "DZ-05": "Batna",
+                    "DZ-08": "Béchar",
+                    "DZ-06": "Béjaïa",
+                    "DZ-07": "Biskra",
+                    "DZ-09": "Blida",
+                    "DZ-34": "Bordj Bou Arréridj",
+                    "DZ-10": "Bouira",
+                    "DZ-35": "Boumerdès",
+                    "DZ-02": "Chlef",
+                    "DZ-25": "Constantine",
+                    "DZ-17": "Djelfa",
+                    "DZ-32": "El Bayadh",
+                    "DZ-39": "El Oued",
+                    "DZ-36": "El Tarf",
+                    "DZ-47": "Ghardaïa",
+                    "DZ-24": "Guelma",
+                    "DZ-33": "Illizi",
+                    "DZ-18": "Jijel",
+                    "DZ-40": "Khenchela",
+                    "DZ-03": "Laghouat",
+                    "DZ-29": "Mascara",
+                    "DZ-26": "Médéa",
+                    "DZ-43": "Mila",
+                    "DZ-27": "Mostaganem",
+                    "DZ-28": "Msila",
+                    "DZ-45": "Naama",
+                    "DZ-31": "Oran",
+                    "DZ-30": "Ouargla",
+                    "DZ-04": "Oum el Bouaghi",
+                    "DZ-48": "Relizane",
+                    "DZ-20": "Saïda",
+                    "DZ-19": "Sétif",
+                    "DZ-22": "Sidi Bel Abbès",
+                    "DZ-21": "Skikda",
+                    "DZ-41": "Souk Ahras",
+                    "DZ-11": "Tamanghasset",
+                    "DZ-12": "Tébessa",
+                    "DZ-14": "Tiaret",
+                    "DZ-37": "Tindouf",
+                    "DZ-42": "Tipaza",
+                    "DZ-38": "Tissemsilt",
+                    "DZ-15": "Tizi Ouzou",
+                    "DZ-13": "Tlemcen"
+                }
+            }
+        },
+        {
+            "AS": {
+                "name": "American Samoa",
+                "divisions": {
+                    "AS-AS": "American Samoa"
+                }
+            }
+        },
+        {
+            "YE": {
+                "name": "Yemen",
+                "divisions": {
+                    "YE-AB": "Abyān",
+                    "YE-AD": "‘Adan",
+                    "YE-BA": "Al Bayḑā'",
+                    "YE-HU": "Al Ḩudaydah",
+                    "YE-JA": "Al Jawf",
+                    "YE-MR": "Al Mahrah",
+                    "YE-MW": "Al Maḩwit",
+                    "YE-DH": "Dhamār",
+                    "YE-HD": "Ḩaḑramawt",
+                    "YE-HJ": "Ḩajjah",
+                    "YE-IB": "Ibb",
+                    "YE-LA": "Laḩij",
+                    "YE-MA": "Ma'rib",
+                    "YE-SD": "Şa'dah",
+                    "YE-SN": "Şan‘ā'",
+                    "YE-SH": "Shabwah",
+                    "YE-TA": "Ta‘izz"
+                }
+            }
+        },
+        {
+            "YU": {
+                "name": "Yugoslavia",
+                "divisions": {
+                    "YU-CG": "Crna Gora",
+                    "YU-SR": "Srbija",
+                    "YU-KM": "Kosovo-Metohija",
+                    "YU-VO": "Vojvodina"
+                }
+            }
+        },
+        {
+            "ZM": {
+                "name": "Zambia",
+                "divisions": {
+                    "ZM-02": "Central",
+                    "ZM-08": "Copperbelt",
+                    "ZM-03": "Eastern",
+                    "ZM-04": "Luapula",
+                    "ZM-09": "Lusaka",
+                    "ZM-05": "Northern",
+                    "ZM-06": "North-Western",
+                    "ZM-07": "Southern",
+                    "ZM-01": "Western"
+                }
+            }
+        },
+        {
+            "ZW": {
+                "name": "Zimbabwe",
+                "divisions": {
+                    "ZW-BU": "Bulawayo",
+                    "ZW-HA": "Harare",
+                    "ZW-MA": "Manicaland",
+                    "ZW-MC": "Mashonaland Central",
+                    "ZW-ME": "Mashonaland East",
+                    "ZW-MW": "Mashonaland West",
+                    "ZW-MV": "Masvingo",
+                    "ZW-MN": "Matabeleland North",
+                    "ZW-MS": "Matabeleland South",
+                    "ZW-MI": "Midlands"
+                }
+            }
+        }
+    ]
+}
+

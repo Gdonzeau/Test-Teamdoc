@@ -19,7 +19,7 @@ class LoadDataViewController: UIViewController {
                 if self.sizeFilesEqual(firstFile: onLineVersion, secondFile: DataLoaded.allData) {
                     print("Pas de mise à jour nécessaire")
                 } else {
-                    print("On peut met à jour")
+                    print("On peut mettre à jour")
                     updateButton.isHidden = false
                 }
             } else {

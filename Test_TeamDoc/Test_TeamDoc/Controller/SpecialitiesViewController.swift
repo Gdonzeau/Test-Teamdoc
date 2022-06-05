@@ -63,10 +63,17 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
         let externalKey = dataUsed[indexPath.row].external_keys[0]
         cell.externalKey.text = externalKey
         
+        
         if let numberOfSubCategories = dataUsed[indexPath.row].sub?.count {
             cell.howManySubcategories = numberOfSubCategories
         } else {
             cell.howManySubcategories = 0
+        }
+        if cell.howManySubcategories > 0 {
+            cell.backgroundColor = .systemPink
+        }
+        if let unwrappedSubSpeciality = dataUsed[indexPath.row].sub {
+            cell.backgroundColor = .blue
         }
         
         cell.sub.text = ">"
@@ -85,8 +92,13 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
             print("Pas de données")
             return
         }
+        
         performSegue(withIdentifier: "segueToSubSpecialities", sender: unwrappedSubSpeciality)
         specialitiesTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
     }
     
 }

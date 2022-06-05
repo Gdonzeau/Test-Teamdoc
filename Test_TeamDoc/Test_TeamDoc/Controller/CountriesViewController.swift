@@ -29,6 +29,7 @@ class CountriesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         loadingData()
         preparingDatas()
+        countriesPickerView.reloadAllComponents()
         divisionsTableView.reloadData()
     }
     
@@ -37,6 +38,9 @@ class CountriesViewController: UIViewController {
     }
     
     func loadingData() {
+        dataUsed = [[String : Country]]()
+        countries = [Country]()
+        divisions = [String]()
         dataUsed = DataLoaded.allData.norm_Iso3166_2
     }
     

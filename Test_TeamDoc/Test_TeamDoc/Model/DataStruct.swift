@@ -88,7 +88,6 @@ struct UnderSpeciality: Codable { // Rien car toutes les données sont nil
     
 }
 
-
 extension GeneralBase: Equatable {
     static func == (lhs: GeneralBase, rhs: GeneralBase) -> Bool {
         return // S'il y a autant de pays, de status et de spécialités dans les éléments comparés, on peut estimer qu'il n'y a pas eu de mise à jour.
