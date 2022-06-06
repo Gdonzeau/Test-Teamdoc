@@ -64,18 +64,14 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
         cell.externalKey.text = externalKey
         
         if dataUsed[indexPath.row].sub != nil { // S'il y a des sous spécialités, la case est entourée de bleu.
-            cell.backgroundColor = .blue
+            cell.backgroundColor = AppColors.backgroundCellWithSubSpecialities
         } else {
-            cell.backgroundColor = .white
+            cell.backgroundColor = AppColors.backgroundCellWithoutSubSpecialities
         }
         
         return cell
     }
-    /*
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        90
-    }
-    */
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Départ")
         
