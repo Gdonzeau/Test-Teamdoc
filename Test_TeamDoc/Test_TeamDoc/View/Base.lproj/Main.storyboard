@@ -565,20 +565,14 @@
                                                                         <constraint firstAttribute="width" constant="8" id="Gi1-dH-gD3"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-fd-cTa">
-                                                                    <rect key="frame" x="12.999999999999998" y="0.0" width="28.333333333333329" height="51"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="28.333333333333329" id="CYt-lV-MTe"/>
-                                                                    </constraints>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-fd-cTa">
+                                                                    <rect key="frame" x="13" y="0.0" width="262.33333333333331" height="51"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX-01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8q-wQ-3rZ">
-                                                                    <rect key="frame" x="46.333333333333343" y="0.0" width="280.66666666666663" height="51"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46.666666666666686" id="pJu-s7-cQ6"/>
-                                                                    </constraints>
+                                                                    <rect key="frame" x="280.33333333333331" y="0.0" width="46.666666666666686" height="51"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
