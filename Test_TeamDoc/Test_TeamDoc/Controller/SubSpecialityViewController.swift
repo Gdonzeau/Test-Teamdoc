@@ -17,6 +17,10 @@ class SubSpecialityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    
+    func setupView() {
         view.backgroundColor = AppColors.backgroundColor
         title = "Sous-spécialités"
     }

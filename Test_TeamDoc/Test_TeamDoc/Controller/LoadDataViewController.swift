@@ -85,6 +85,10 @@ class LoadDataViewController: UIViewController {
 
             version android : \(DataLoaded.allData.appVersion[0].intern)
             version iOS : \(DataLoaded.allData.appVersion[1].intern)
+
+            Nombre de pays mémorisés : \(DataLoaded.allData.norm_Iso3166_2.count)
+            Nombre de statuts mémorisés : \(DataLoaded.allData.proStatus.count)
+            Nombre de spécialités mémorisées : \(DataLoaded.allData.speciality.count)
             """
         
         onLineVersionTextView.text =
@@ -95,6 +99,10 @@ class LoadDataViewController: UIViewController {
 
             version android : \(onLineVersion.appVersion.count >= 1 ? String(onLineVersion.appVersion[0].intern) : "inconnue")
             version iOS : \(onLineVersion.appVersion.count >= 2 ? String(onLineVersion.appVersion[1].intern) : "inconnue")
+
+            Nombre de pays mémorisés : \(onLineVersion.norm_Iso3166_2.count == 0 ? "inconnu": String(onLineVersion.norm_Iso3166_2.count))
+            Nombre de statuts mémorisés : \(onLineVersion.proStatus.count == 0 ? "inconnu": String(onLineVersion.proStatus.count))
+            Nombre de spécialités mémorisées : \(onLineVersion.speciality.count == 0 ? "inconnu": String(onLineVersion.speciality.count))
             """
         
         
