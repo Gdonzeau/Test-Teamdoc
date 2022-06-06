@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="74R-n7-jhy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4640" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="-864" y="120"/>
         </scene>
-        <!--Chargement des données-->
+        <!--Données-->
         <scene sceneID="KI0-bI-zvi">
             <objects>
                 <viewController id="zEb-5q-wYC" customClass="LoadDataViewController" customModule="Test_TeamDoc" customModuleProvider="target" sceneMemberID="viewController">
@@ -119,7 +119,7 @@
                             <constraint firstItem="Yrn-YC-bmm" firstAttribute="top" secondItem="wbR-5R-P8a" secondAttribute="bottom" constant="5" id="yqU-Iu-lzb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chargement des données" image="square.and.arrow.down.fill" catalog="system" id="xbl-3D-jFs"/>
+                    <tabBarItem key="tabBarItem" title="Données" image="square.and.arrow.down" catalog="system" id="xbl-3D-jFs"/>
                     <connections>
                         <outlet property="activityIndicator" destination="6qT-Xt-Lci" id="WJV-Ao-eWu"/>
                         <outlet property="loadDataButton" destination="Yrn-YC-bmm" id="ASJ-RE-Yok"/>
@@ -131,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufY-kc-6q8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-605.68720379146919"/>
+            <point key="canvasLocation" x="385" y="-1737"/>
         </scene>
         <!--Pays-->
         <scene sceneID="tne-QT-ifu">
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060.8695652173915" y="-238.39285714285714"/>
+            <point key="canvasLocation" x="385" y="-1038"/>
         </scene>
         <!--Statuts-->
         <scene sceneID="wYC-wr-eHj">
@@ -274,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHu-hx-UIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.5652173913045" y="217.63392857142856"/>
+            <point key="canvasLocation" x="385" y="-347"/>
         </scene>
         <!--Item-->
         <scene sceneID="5le-YF-Enh">
@@ -291,7 +291,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poC-Hs-X3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-728" y="1120"/>
+            <point key="canvasLocation" x="385" y="1090"/>
         </scene>
         <!--Spécialités-->
         <scene sceneID="Xdu-98-st0">
@@ -415,7 +415,7 @@
                     <viewLayoutGuide key="safeArea" id="xPX-yj-zj8"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="1091" y="651"/>
+            <point key="canvasLocation" x="385" y="346"/>
         </scene>
         <!--Sub Speciality View Controller-->
         <scene sceneID="AqR-Dt-lsP">
@@ -498,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHD-X5-O1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.2307692307691" y="898.57819905213262"/>
+            <point key="canvasLocation" x="1294" y="346"/>
         </scene>
         <!--Spécialités-->
         <scene sceneID="Flz-tI-fFe">
@@ -621,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jH-pH-elI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="1427"/>
+            <point key="canvasLocation" x="1294" y="1090"/>
         </scene>
         <!--Sub Speciality View Controller-->
         <scene sceneID="row-6A-ykn">
@@ -684,14 +684,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hey-PH-BaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="1594"/>
+            <point key="canvasLocation" x="2145" y="1090"/>
         </scene>
     </scenes>
     <resources>
         <image name="cross.circle" catalog="system" width="128" height="121"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="perspective" catalog="system" width="128" height="114"/>
-        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
