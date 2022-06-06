@@ -71,11 +71,11 @@ extension SpecialitiesViewController: UITableViewDataSource, UITableViewDelegate
         
         return cell
     }
-    
+    /*
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         90
     }
-    
+    */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Départ")
         
