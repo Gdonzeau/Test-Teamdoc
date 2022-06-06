@@ -11,6 +11,8 @@ class SubSpecialityViewController: UIViewController {
     
     var subSpecialities = [SubSpeciality]()
 
+    @IBOutlet weak var subSpecialityTableView: UITableView!
+    
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true)
     }

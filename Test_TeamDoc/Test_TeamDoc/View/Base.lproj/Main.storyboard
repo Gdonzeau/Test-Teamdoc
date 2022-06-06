@@ -119,7 +119,7 @@
                             <constraint firstItem="Yrn-YC-bmm" firstAttribute="top" secondItem="wbR-5R-P8a" secondAttribute="bottom" constant="5" id="yqU-Iu-lzb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Données" image="square.and.arrow.down" catalog="system" id="xbl-3D-jFs"/>
+                    <tabBarItem key="tabBarItem" title="Données" image="download" selectedImage="download" id="xbl-3D-jFs"/>
                     <connections>
                         <outlet property="activityIndicator" destination="6qT-Xt-Lci" id="WJV-Ao-eWu"/>
                         <outlet property="loadDataButton" destination="Yrn-YC-bmm" id="ASJ-RE-Yok"/>
@@ -201,7 +201,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XHd-AM-3Tt" secondAttribute="trailing" constant="20" id="QBU-11-97U"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pays" image="globe" catalog="system" id="ixg-tc-VZa"/>
+                    <tabBarItem key="tabBarItem" title="Pays" image="globe" selectedImage="globe" id="ixg-tc-VZa"/>
                     <connections>
                         <outlet property="countriesPickerView" destination="phJ-ZS-IY3" id="zM2-KH-zo1"/>
                         <outlet property="divisionsTableView" destination="DqH-te-BzA" id="waV-Ff-SNI"/>
@@ -267,7 +267,7 @@
                             <constraint firstItem="OtX-Xm-ZoH" firstAttribute="top" secondItem="fVi-j1-vcK" secondAttribute="top" id="eeT-aG-5H5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Statuts" image="cross.circle" catalog="system" id="ZpL-qz-2zW"/>
+                    <tabBarItem key="tabBarItem" title="Statuts" image="cross" selectedImage="cross" id="ZpL-qz-2zW"/>
                     <connections>
                         <outlet property="statutsTableView" destination="uN9-iR-FKv" id="Qnd-lJ-RUk"/>
                     </connections>
@@ -411,7 +411,7 @@
                             <constraint firstItem="J17-ru-nv5" firstAttribute="bottom" secondItem="9iy-wj-CuU" secondAttribute="bottom" id="mmC-6Y-GKa"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Spécialités" image="perspective" catalog="system" id="lYO-gQ-vOx"/>
+                    <tabBarItem key="tabBarItem" title="Spécialités" image="target" selectedImage="target" id="lYO-gQ-vOx"/>
                     <connections>
                         <outlet property="specialitiesTableView" destination="J17-ru-nv5" id="qQw-0W-oi9"/>
                         <segue destination="3Cc-1a-7G7" kind="presentation" identifier="segueToSubSpecialities" modalPresentationStyle="fullScreen" id="0f9-wD-txM"/>
@@ -504,6 +504,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ec6-R8-ZhT"/>
+                    <connections>
+                        <outlet property="subSpecialityTableView" destination="Sgb-jB-L9g" id="giA-K5-U7A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHD-X5-O1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -562,16 +565,18 @@
                                                                         <constraint firstAttribute="width" constant="8" id="Gi1-dH-gD3"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-fd-cTa">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-fd-cTa">
                                                                     <rect key="frame" x="12.999999999999998" y="0.0" width="28.333333333333329" height="51"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="28.333333333333329" id="CYt-lV-MTe"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="XX-01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8q-wQ-3rZ">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX-01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8q-wQ-3rZ">
                                                                     <rect key="frame" x="46.333333333333343" y="0.0" width="280.66666666666663" height="51"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46.666666666666686" id="j5t-Ji-PNn"/>
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46.666666666666686" id="pJu-s7-cQ6"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -631,7 +636,7 @@
                             <constraint firstItem="wsF-nY-iRj" firstAttribute="leading" secondItem="TDV-ZM-5Iu" secondAttribute="leading" constant="20" id="Ru3-cD-196"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Spécialités" image="perspective" catalog="system" id="nkG-0e-xS8"/>
+                    <tabBarItem key="tabBarItem" title="Spécialités" image="target" selectedImage="target" id="nkG-0e-xS8"/>
                     <navigationItem key="navigationItem" id="qoZ-Fk-OSA"/>
                     <connections>
                         <outlet property="specialitiesTableView" destination="wsF-nY-iRj" id="eeh-sF-H5W"/>
@@ -700,6 +705,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Za3-IT-Fhw"/>
+                    <connections>
+                        <outlet property="subSpecialityTableView" destination="eJa-XP-oMd" id="bgz-rB-Vih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hey-PH-BaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -707,10 +715,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cross.circle" catalog="system" width="128" height="121"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
-        <image name="perspective" catalog="system" width="128" height="114"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="cross" width="20" height="20"/>
+        <image name="download" width="20" height="20"/>
+        <image name="globe" width="20" height="20"/>
+        <image name="target" width="20" height="20"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
