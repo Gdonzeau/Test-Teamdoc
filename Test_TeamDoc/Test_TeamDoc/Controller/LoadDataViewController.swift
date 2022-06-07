@@ -153,12 +153,7 @@ class LoadDataViewController: UIViewController {
     }
     
     func sizeFilesEqual(firstFile: GeneralBase, secondFile: GeneralBase) -> Bool {
-        
-        if firstFile == secondFile {
-            return true
-        } else {
-            return false
-        }
+        firstFile == secondFile
     }
 }
 
