@@ -23,7 +23,7 @@ class SpecialityTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell(label: String, key: String, externalKey: String) {
+    private func configureCell(label: String, key: String, externalKey: String) {
         self.label.text = label
         self.key.text = key
         self.externalKey.text = externalKey

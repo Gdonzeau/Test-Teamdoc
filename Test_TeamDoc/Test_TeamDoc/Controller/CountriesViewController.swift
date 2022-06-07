@@ -33,18 +33,18 @@ class CountriesViewController: UIViewController {
         divisionsTableView.reloadData()
     }
     
-    func setupView() {
+    private func setupView() {
         view.backgroundColor = AppColors.backgroundColor
     }
     
-    func loadingData() {
+    private func loadingData() {
         dataUsed = [[String : Country]]()
         countries = [Country]()
         divisions = [String]()
         dataUsed = DataLoaded.allData.norm_Iso3166_2
     }
     
-    func preparingDatas() {
+    private func preparingDatas() {
         // On charge un pays "vide" pour la présentation
         let firstCountryEmpty = Country(name: "- -", divisions: [:])
         countries.append(firstCountryEmpty)

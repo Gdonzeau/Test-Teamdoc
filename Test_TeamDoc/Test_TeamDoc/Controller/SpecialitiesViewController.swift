@@ -32,13 +32,13 @@ class SpecialitiesViewController: UIViewController {
         }
     }
     
-    func setupView() {
+    private func setupView() {
         title = "Spécialités"
         view.backgroundColor = AppColors.backgroundColor
         specialitiesTableView.layer.cornerRadius = 5
     }
     
-    func loadingData() {
+    private func loadingData() {
         dataUsed = DataLoaded.allData.speciality
     }
 }

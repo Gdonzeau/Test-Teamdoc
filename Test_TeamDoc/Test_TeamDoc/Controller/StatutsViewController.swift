@@ -10,7 +10,7 @@ import UIKit
 class StatutsViewController: UIViewController {
     
     private var dataUsed = [ProStatus]()
-    var hiddenSections = Set<Int>()
+    private var hiddenSections = Set<Int>()
     
     @IBOutlet weak var statutsTableView: UITableView!
     
@@ -25,12 +25,12 @@ class StatutsViewController: UIViewController {
         statutsTableView.reloadData()
     }
     
-    func setupView() {
+    private func setupView() {
         view.backgroundColor = AppColors.backgroundColor
         statutsTableView.layer.cornerRadius = 5
     }
     
-    func loadingData() {
+    private func loadingData() {
         dataUsed = DataLoaded.allData.proStatus
     }
     

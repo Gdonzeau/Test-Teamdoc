@@ -9,10 +9,10 @@ import UIKit
 
 class LoadDataViewController: UIViewController {
     
-    let dataService = DataService.shared
-    var onLineVersion = GeneralBase(resource_version: 0, appVersion: [OS](), prefixes: [Prefix](), norm_Iso3166_2: [[String : Country]](), proStatus: [ProStatus](), speciality: [Speciality]())
+    private let dataService = DataService.shared
+    private var onLineVersion = GeneralBase(resource_version: 0, appVersion: [OS](), prefixes: [Prefix](), norm_Iso3166_2: [[String : Country]](), proStatus: [ProStatus](), speciality: [Speciality]())
     
-    var didLoadLastVersion = false {
+    private var didLoadLastVersion = false {
         didSet {
             if didLoadLastVersion {
                 updateButton.isHidden = false // Le bouton apparaît pour la démonstration. On peut ensuite le passer en commentaire. Si les versions sont différentes il apparaîtra.
@@ -23,12 +23,12 @@ class LoadDataViewController: UIViewController {
                     updateButton.isHidden = false
                 }
             } else {
-                
+                // Si la dernière version n'est pas chargée
             }
         }
     }
     
-    var didUpdateVersion = false
+    private var didUpdateVersion = false
     
     @IBOutlet weak var mainTitle: UILabel!
     
@@ -59,7 +59,7 @@ class LoadDataViewController: UIViewController {
         setupView()
     }
     
-    func setupView() {
+    private func setupView() {
         view.backgroundColor = AppColors.backgroundColor
         loadDataButton.backgroundColor = AppColors.backgroundButton
         loadDataButton.layer.cornerRadius = 5
@@ -105,11 +105,10 @@ class LoadDataViewController: UIViewController {
             Nombre de spécialités mémorisées : \(onLineVersion.speciality.count == 0 ? "inconnu": String(onLineVersion.speciality.count))
             """
         
-        
         showActivityIndicator(show: false)
     }
     
-    func loadData() {
+    private func loadData() {
         showActivityIndicator(show: true)
         let stringAdress = APIConfig.adress
         dataService.getData(stringAdress: stringAdress) {
@@ -133,12 +132,12 @@ class LoadDataViewController: UIViewController {
         }
     }
     
-    func showActivityIndicator(show: Bool) {
+    private func showActivityIndicator(show: Bool) {
         activityIndicator.isHidden = !show
         onLineVersionTextView.isHidden = show
     }
     
-    func update() {
+    private func update() {
         print("On met à jour")
         DataLoaded.allData = onLineVersion
         updateButton.isHidden = true
@@ -152,7 +151,7 @@ class LoadDataViewController: UIViewController {
         present(alertVC,animated: true,completion: nil)
     }
     
-    func sizeFilesEqual(firstFile: GeneralBase, secondFile: GeneralBase) -> Bool {
+    private func sizeFilesEqual(firstFile: GeneralBase, secondFile: GeneralBase) -> Bool {
         firstFile == secondFile
     }
 }

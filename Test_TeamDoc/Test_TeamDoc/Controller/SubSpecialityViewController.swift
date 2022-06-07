@@ -22,7 +22,7 @@ class SubSpecialityViewController: UIViewController {
         setupView()
     }
     
-    func setupView() {
+    private func setupView() {
         view.backgroundColor = AppColors.backgroundColor
         title = "Sous-spécialités"
     }
